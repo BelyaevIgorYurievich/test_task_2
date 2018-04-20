@@ -1,6 +1,6 @@
 import React from 'react'
 
-import DealCard from 'DealCard/DealCard'
+import DealCard from 'DealCard'
 
 import './style.less'
 

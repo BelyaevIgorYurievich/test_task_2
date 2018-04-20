@@ -1,0 +1,19 @@
+.radio-butten {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    border: 1px solid;
+    border-radius: 100%;
+    position: relative;
+    cursor: pointer;
+
+    &.active {
+
+        &:after{
+            top: -8%;
+            left: 30%;
+            position:absolute;
+            content: '\2022';
+        }
+    }
+}

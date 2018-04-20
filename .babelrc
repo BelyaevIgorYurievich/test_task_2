@@ -1,11 +1,17 @@
 {
-  "presets": [
-    ["es2015", {"modules": false}],
-    "stage-2",
-    "react"
-  ],
-  "plugins": [
-    "react-hot-loader/babel",
-    "transform-decorators-legacy"
-  ]
+  "ignore": [],
+  "env": {
+    "testing": {
+      "presets": ["es2015", "stage-2", "react"],
+      "plugins": ["transform-decorators-legacy"]
+    },
+    "production": {
+      "presets": [["es2015", { "modules": false }], "stage-2", "react"],
+      "plugins": ["transform-decorators-legacy"]
+    },
+    "development": {
+      "presets": [["es2015", { "modules": false }], "stage-2", "react"],
+      "plugins": ["transform-decorators-legacy", "react-hot-loader/babel"]
+    }
+  }
 }

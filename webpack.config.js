@@ -21,7 +21,8 @@ module.exports = {
     resolve: {
         alias: {
           PersonalCard: path.resolve(__dirname, 'source/personal_card'),
-          DealCard: path.resolve(__dirname, 'source/deal_card')
+          DealCard: path.resolve(__dirname, 'source/deal_card'),
+          RadioButton: path.resolve(__dirname, 'source/radio_button')
         },
     },
 	plugins: [

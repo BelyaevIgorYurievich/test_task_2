@@ -20,27 +20,27 @@ class PersonalCard extends React.PureComponent {
     return (
 	    <div className='personal-card'>
 	      <Form className='personal-card__body'>
-		    <div className='input'>
-		    <label>
-		      <span className='label'>Фамилия:</span>
-		      <Field name="surname" placeholder="Введите Фамилию"/>
-	        </label>
-		       { touched.surname && errors.surname && <p className="error">{errors.surname}</p> }
-		    </div>
-		    <div className='input'>
-    		    <label>
-		      		<span className='label'>Имя:</span>
-		      		<Field type="text" name="name" placeholder="Введите Имя"/>
-	      		</label>
-		      	{ touched.name && errors.name && <p className="error">{errors.name}</p> }
-		    </div>
-		    <div className='input'>
-    		    <label>	
-		      		<span className='label'>Отчество:</span>
-		    	    <Field type="text" name="patronymic" placeholder="Введите Отчество"/>
-	    	    </label>
-		      { touched.patronymic && errors.patronymic && <p className="error">{errors.patronymic}</p> }
-		    </div>
+					<div className='input'>
+						<label>
+							<span className='label'>Фамилия:</span>
+							<Field name="surname" placeholder="Введите Фамилию"/>
+							</label>
+							{ touched.surname && errors.surname && <p className="error">{errors.surname}</p> }
+					</div>
+					<div className='input'>
+							<label>
+								<span className='label'>Имя:</span>
+								<Field type="text" name="name" placeholder="Введите Имя"/>
+							</label>
+							{ touched.name && errors.name && <p className="error">{errors.name}</p> }
+					</div>
+					<div className='input'>
+							<label>	
+								<span className='label'>Отчество:</span>
+								<Field type="text" name="patronymic" placeholder="Введите Отчество"/>
+							</label>
+						{ touched.patronymic && errors.patronymic && <p className="error">{errors.patronymic}</p> }
+					</div>
 		    <div className='input'>
 		        <label>	
 		      		<span className='label'>Дата рождения:</span>
@@ -50,13 +50,14 @@ class PersonalCard extends React.PureComponent {
 		              type="text"
 		              name="date" 
 		              placeholder="Введите дату рождения"
-					  mask="99-99-9999"
+					  			mask="99-99-9999"
 		            />
         		</label>
 		      { touched.date && errors.date && <p className="error">{errors.date}</p> }
 		    </div>
 		    <div className="personal-card__footer">
-		    	<button className="button" disabled={isSubmitting}>Сохраить пользователя</button>
+					<button className="button" 
+					disabled={isSubmitting}>Сохраить пользователя</button>
 	    	</div>
 		  </Form>
 	  </div>
@@ -82,7 +83,6 @@ const FormikPersonalCard = withFormik({
   }),
   handleSubmit(values, { setSubmitting, resetForm, props }) {
     setSubmitting(false);
-    console.log(values);
     resetForm();
     props.successСreationUser(values);
   }
