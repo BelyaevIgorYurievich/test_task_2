@@ -3,7 +3,7 @@ import { withFormik, Form, Field } from 'formik'
 import Yup from 'yup'
 import InputMask from 'react-input-mask'
 
-import PersonalCard from 'PersonalCard/PersonalCard'
+import PersonalCard from 'PersonalCard'
 import RadioButton from 'RadioButton'
 
 import { allData } from './data'

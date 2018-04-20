@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
 
 import App from './App.js';
 
@@ -7,7 +8,9 @@ const rootEl = document.getElementById('root');
 
 const _render = (Component) =>
   render(
-    <App />,
+    <AppContainer>
+      <App />
+    </AppContainer>,
     rootEl
   );
   
