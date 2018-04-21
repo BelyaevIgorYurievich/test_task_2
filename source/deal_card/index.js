@@ -16,17 +16,23 @@ class DealCard extends React.PureComponent {
   }
 
   handleOpenPersonal = () => {
-  	const {setFieldValue, values:{isPersonalCardOpen}} = this.props;
+  	const { setFieldValue } = this.props;
   	
-  	setFieldValue('isPersonalCardOpen', !isPersonalCardOpen);
+  	setFieldValue('isPersonalCardOpen', true);
   }
 
   successСreationUser = (data) => {
-  	const {setFieldValue, values:{isPersonalCardOpen, userNames}} = this.props;
+  	const {setFieldValue, values:{userNames}} = this.props;
   	
-  	setFieldValue('isPersonalCardOpen', !isPersonalCardOpen);
+  	setFieldValue('isPersonalCardOpen', false);
   	setFieldValue('userNames', [...userNames, data]);
   	setFieldValue('nameId', data.id);
+	} 
+	
+	cancelСreationUser = () => {
+		const {	setFieldValue } = this.props;
+		
+  	setFieldValue('isPersonalCardOpen', false);
   } 
 
 	handleChengeValue = (type, value) => () => {
@@ -56,7 +62,10 @@ class DealCard extends React.PureComponent {
 		const isSelectTypeIsProduct = values.typeName === 'Товар';
 
   	if (values.isPersonalCardOpen) {
-  		return <PersonalCard successСreationUser={this.successСreationUser} />
+			return <PersonalCard
+								 successСreationUser={this.successСreationUser}
+								 cancelСreationUser={this.cancelСreationUser}
+			 				/>
   	}
 
     return (

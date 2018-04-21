@@ -49,6 +49,8 @@
     "moment": "^2.18.1",
     "react": "^16.0.0",
     "react-addons-test-utils": "^15.6.2",
+    "react-bootstrap": "^0.32.1",
+    "react-bootstrap-maskedinput": "^0.4.0",
     "react-dom": "^16.0.0",
     "react-hot-loader": "^3.0.0",
     "react-input-mask": "^1.2.2",
