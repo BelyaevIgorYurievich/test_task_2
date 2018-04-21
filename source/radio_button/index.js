@@ -8,13 +8,15 @@ export default class RadioButten extends React.PureComponent {
     render() {
         const {
             isActive,
-            handleСhange
+            handleСhange,
+            fieldName
         } = this.props;
 
         return(
-            <div className={isActive ? 'radio-butten active' : 'radio-butten'}
-                onClick={handleСhange}
-            />
+            <div className='radio-butten'onClick={handleСhange}>
+                {isActive && <div className='circle'/>}
+                <span className='field-name'>{fieldName}</span>
+            </div>
         )
     }
 }

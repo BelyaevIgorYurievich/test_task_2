@@ -6,14 +6,20 @@
     border-radius: 100%;
     position: relative;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 
-    &.active {
+    .circle {
+        width: 7px;
+        position: absolute;
+        height: 7px;
+        border-radius: 100%;
+        background: black;
+        left: 3px;
+    }
 
-        &:after{
-            top: -8%;
-            left: 30%;
-            position:absolute;
-            content: '\2022';
-        }
+    .field-name {
+        margin-left: 20px;
     }
 }
