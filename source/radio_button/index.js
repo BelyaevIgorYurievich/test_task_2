@@ -22,10 +22,12 @@ export default class RadioButton extends React.PureComponent {
 }
 
 RadioButton.defaultProps = {
-    isActive: false
+    isActive: false,
+    fieldName: ''
 };
 
 RadioButton.propTypes = {
     isActive: PropTypes.bool,
-    handleСhange: PropTypes.func
+    handleСhange: PropTypes.func,
+    fieldName: PropTypes.string
 }

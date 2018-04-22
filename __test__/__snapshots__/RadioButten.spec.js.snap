@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RadioButton отображается корректно 1`] = `
+exports[`RadioButton Отображается корректно 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RadioButton
+    fieldName=""
     isActive={false}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -23,7 +24,9 @@ ShallowWrapper {
         false,
         <span
           className="field-name"
-        />,
+        >
+          
+        </span>,
       ],
       "className": "radio-butten",
       "onClick": undefined,
@@ -36,11 +39,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": "",
           "className": "field-name",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "",
         "type": "span",
       },
     ],
@@ -56,7 +59,9 @@ ShallowWrapper {
           false,
           <span
             className="field-name"
-          />,
+          >
+            
+          </span>,
         ],
         "className": "radio-butten",
         "onClick": undefined,
@@ -69,11 +74,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": "",
             "className": "field-name",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "",
           "type": "span",
         },
       ],
