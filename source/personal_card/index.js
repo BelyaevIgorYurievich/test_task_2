@@ -5,6 +5,8 @@ import InputMask from 'react-input-mask';
 import { Button, Modal, FormGroup, ControlLabel, FormControl, HelpBlock } from 'react-bootstrap';
 import MaskedFormControl from 'react-bootstrap-maskedinput'
 
+import './style.less'
+
 class PersonalCard extends React.PureComponent {
 
 	handleChengeValue = (type) => (event) => {
