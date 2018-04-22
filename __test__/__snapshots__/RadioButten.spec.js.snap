@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RadioButten отображается корректно 1`] = `
+exports[`RadioButton отображается корректно 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <RadioButten
+  Symbol(enzyme.__unrendered__): <RadioButton
     isActive={false}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -19,11 +19,31 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
+      "children": Array [
+        false,
+        <span
+          className="field-name"
+        />,
+      ],
       "className": "radio-butten",
       "onClick": undefined,
     },
     "ref": null,
-    "rendered": null,
+    "rendered": Array [
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "field-name",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "span",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -32,11 +52,31 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "children": Array [
+          false,
+          <span
+            className="field-name"
+          />,
+        ],
         "className": "radio-butten",
         "onClick": undefined,
       },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "field-name",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "span",
+        },
+      ],
       "type": "div",
     },
   ],

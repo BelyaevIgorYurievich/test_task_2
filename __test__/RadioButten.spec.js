@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme'
 
-import RadioButten from '../source/radio_button/index.js'
+import RadioButton from '../source/radio_button/index.js'
 
-describe('RadioButten', () => {
+describe('RadioButton', () => {
     it('отображается корректно', () => {
-        const renderedValue = shallow(<RadioButten />);
+        const renderedValue = shallow(<RadioButton />);
         
         expect(renderedValue).toMatchSnapshot();
     });

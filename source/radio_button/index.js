@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './style.less';
 
-export default class RadioButten extends React.PureComponent {
+export default class RadioButton extends React.PureComponent {
 
     render() {
         const {
@@ -21,11 +21,11 @@ export default class RadioButten extends React.PureComponent {
     }
 }
 
-RadioButten.defaultProps = {
+RadioButton.defaultProps = {
     isActive: false
 };
 
-RadioButten.propTypes = {
+RadioButton.propTypes = {
     isActive: PropTypes.bool,
     handleСhange: PropTypes.func
 }
